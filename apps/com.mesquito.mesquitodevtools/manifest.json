@@ -1,0 +1,12 @@
+{
+  "minVersion": 1,
+  "version": 1,
+  "waf": true,
+  "id": "com.mesquito.mesquitodevtools",
+  "name": "Mesquito Devtools",
+  "author": "Bluebotlaboratories",
+  "description": "Javascript Debug and Developer Tools For Mesquito (runs in WAF mode)",
+  "repo": "https://github.com/KWebBrew/KWebBrew",
+  "icon": "icon.jpg",
+  "entrypoint": "index.html"
+}

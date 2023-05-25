@@ -1,0 +1,10 @@
+{
+    "manifestVersion": 1,
+    "themeVersion": "v1.0.0",
+    "id": "com.mesquito.defaultTheme",
+    "name": "Default",
+    "author": "Bluebotlaboratories",
+    "description": "The default theme for Mesquito",
+    "repo": "https://github.com/KWebBrew/Mesquito",
+    "entrypoint": "default.css"
+}

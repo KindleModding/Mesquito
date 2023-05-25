@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<!-- Copyright Bluebotlaboratories -->
+<!-- Compatability Wrapper is required so menu works on non-WAF apps -->
+
+<html>
+<head>
+  <meta name="viewport" content="user-scalable=no"/>
+  <script src="./polyfill.min.js"></script>
+  <script src="./sdk.js"></script>
+  
+  <title></title>
+
+  <style>
+    :root {
+      font-size: 0.25em; /*25px;*/
+      overflow: hidden;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    var kindle = window.kindle || top.kindle
+
+    var queryData = getQueryData();
+    window.mesquito.log("Query Data:")
+    window.mesquito.log(JSON.stringify(queryData))
+
+    const iframe = document.createElement("iframe");
+    iframe.src = queryData["entrypoint"];
+    //iframe.setAttribute("sandbox", "")
+
+    window.mesquito.log("IFrame Created")
+
+    // Add iframe to body
+    document.body.appendChild(iframe);
+
+    // Add listener to iframe
+    iframe.addEventListener("load", function (event) {
+      // Get iframe's documentElement and clone it and get the innerHTML
+      document.title = event.target.contentDocument.title;
+      window.mesquito.updateNavigation()
+
+      compatStyle = document.createElement("link");
+      compatStyle.setAttribute('href', 'file:///mnt/us/mesquito/main.css');
+      compatStyle.setAttribute('rel', 'stylesheet');
+      event.target.contentDocument.body.appendChild(compatStyle)
+    });
+  </script>
+</body>
+</html>

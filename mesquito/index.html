@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<!-- Copyright Bluebotlaboratories -->
+
+<html>
+
+<head>
+  <meta name="viewport" content="user-scalable=no" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <script src="./polyfill.min.js"></script>
+  <script src="./sdk.js"></script>
+  <script src="./main.js"></script>
+
+  <link href="./main.css" rel="stylesheet">
+
+  <title>Mesquito</title>
+</head>
+
+<body onload="onPageLoad()">
+  <table class="pageWrapper">
+    <tbody style="min-height: 100vh;">
+    <tr><td>
+      <div class="title">
+        <h1>Mesquito - The Annoying WAF Launcher</h1>
+        <p>v1.2.0</p>
+      </div>
+    </td></tr>
+
+    <tr style="height: 100%;"><td>
+      <div class="tableWrapper">
+        <p id="loading">Loading Your Apps...</p>
+        <table id="appTable" class="appTable">
+        </table>
+      </div>
+    </td></tr>
+
+    <tr><td>
+      <div class="logSection">
+        <center>
+          <button onclick="toggleLog()">TOGGLE LOG</button>
+        </center>
+        <div id="log" style="display: none;"></div>
+      </div>
+    </td></tr>
+  </tbody>
+  </table>
+</body>
+
+</html>

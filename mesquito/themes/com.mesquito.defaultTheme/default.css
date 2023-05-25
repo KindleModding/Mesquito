@@ -1,0 +1,83 @@
+/*===============================*/
+/*                               */
+/* Copyright Bluebotlaboratories */
+/*                               */
+/*===============================*/
+
+.pageWrapper {
+    padding: 0;
+    margin: 0;
+    table-layout: fixed;
+    border-collapse: separate;
+    border: none;
+    border-spacing: 0;
+    min-height: 100vH;
+}
+
+.pageWrapper tbody,
+tr,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    background-color: #333;
+    color: #FFF;
+    margin: 0;
+    padding: 1em;
+}
+
+#loading {
+    text-align: center;
+}
+
+.logSection {
+    padding: 1em 0;
+    min-height: 10%;
+    max-width: 100%;
+    background-color: #333;
+}
+
+.logSection button {
+    background-color: #FFF;
+    color: #000;
+    padding: 1em;
+    border: none;
+    font-size: 0.5em;
+}
+
+.logSection button:active {
+    background-color: #000;
+    color: #FFF;
+}
+
+#log {
+    color: #FFF;
+}
+
+.title h1 {
+    margin-top: 0;
+}
+
+.appTable {
+    table-layout: fixed;
+    border-collapse: separate;
+}
+
+.appRow {
+    width: 100%;
+}
+
+.app {
+    padding: 1.5%;
+    width: 25%;
+    text-align: center;
+}
+
+.app img {
+    object-fit: contain;
+    width: 100%;
+    /*border-radius: 5%;*/
+}

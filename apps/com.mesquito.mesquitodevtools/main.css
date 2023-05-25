@@ -1,0 +1,25 @@
+* {
+  font-family: sans-serif;
+}
+
+textarea {
+  width: 100%;
+  height: 50%;
+}
+
+.userInput {
+  width: 100%;
+}
+
+.userInput input {
+  width: 85%;
+}
+
+.userInput button {
+  width: 10%;
+}
+
+.activeCommand {
+  color: blue;
+  font-weight: bold;
+}

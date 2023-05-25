@@ -1,0 +1,13 @@
+{
+  "minVersion": 1,
+  "manifestVersion": 2,
+  "appVersion": "v1.0.0",
+  "waf": false,
+  "id": "com.mesquito.settings",
+  "name": "Settings",
+  "author": "Bluebotlaboratories",
+  "description": "Settings For Mesquito",
+  "repo": "https://github.com/KWebBrew/Mesquito",
+  "icon": "icon.png",
+  "entrypoint": "index.html"
+}
