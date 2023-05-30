@@ -8,7 +8,7 @@ var versionInt = 2;
 var versionString = 'v1.2.0'
 
 // Clear localStorage log
-window.localStorage.setItem("latest.log", JSON.stringify([])) // Empty log
+//window.localStorage.setItem("latest.log", JSON.stringify([])) // Empty log
 
 // Log js errors to log
 addEventListener("error", function (event) {
@@ -39,8 +39,27 @@ function generateTable(appList, columns) {
     log("Obtained manifests");
     log(JSON.stringify(appManifests));
 
-    // Loop through app manifests
+    var parsedManifests = []; // Store parsed manifests
     for (var i = 0; i < appManifests.length; i++) {
+      // Parse manifest file
+      var appData = JSON.parse(appManifests[i]);
+      // Handle different manifest versions
+      switch (appData.manifestVersion) {
+        case 2:
+          if (appData.minVersion > versionInt) {
+            continue;
+          }
+          if (appData.id == "com.kwebbrew.settings") {
+            continue;
+          }
+          break;
+      }
+
+      parsedManifests.push(appData);
+    }
+
+    // Loop through app manifests
+    for (var i = 0; i < parsedManifests.length; i++) {
       if (i % columns == 0 && i != 0) {
         // If it is the end of a row, add the row to the table and create a new row
         document.getElementById("appTable").appendChild(tableRow);
@@ -54,26 +73,9 @@ function generateTable(appList, columns) {
 
       // Try/Catch for malformed manifests
       try {
-        // Parse manifest file
-        var appData = JSON.parse(appManifests[i]);
-
-        // Handle different manifest versions
-        switch (appData.manifestVersion) {
-          case 2:
-            if (appData.minVersion > versionInt) {
-              continue;
-            }
-            if (appData.id == "com.kwebbrew.settings") {
-              continue;
-            }
-            break;
-          default:
-            break;
-        }
-
-        if (!appData.waf) {
-          window.mesquito.log("App is not waf: " + appData.name)
-          appData.waf = false;
+        if (!parsedManifests[i].waf) {
+          window.mesquito.log("App is not waf: " + parsedManifests[i].name)
+          parsedManifests[i].waf = false;
         }
 
         // Create table cell
@@ -82,19 +84,19 @@ function generateTable(appList, columns) {
 
         // Create app link (cross-reference path from the appList since the manifest doesn't contain it)
         const appAnchor = document.createElement("a");
-        if (appData.waf) {
-          appAnchor.href = joinPaths(appList[i].path, appData.entrypoint);
+        if (parsedManifests[i].waf) {
+          appAnchor.href = joinPaths("file:///mnt/us/apps/" + parsedManifests[i].id, parsedManifests[i].entrypoint);
         } else {
-          appAnchor.href = 'file:///mnt/us/mesquito/compatabilityWrapper.html?entrypoint=' + encodeURIComponent(joinPaths(appList[i].path, appData.entrypoint)); // Backwards compatability with non-WAF apps
+          appAnchor.href = 'file:///mnt/us/mesquito/compatabilityWrapper.html?entrypoint=' + encodeURIComponent(joinPaths("file:///mnt/us/apps/" + parsedManifests[i].id, parsedManifests[i].entrypoint)); // Backwards compatability with non-WAF apps
         }
 
         // Create app icon element
         const appImage = document.createElement("img");
-        appImage.src = joinPaths(appList[i].path, appData.icon);
+        appImage.src = joinPaths("file:///mnt/us/apps/" + parsedManifests[i].id, parsedManifests[i].icon);
 
         // Create app title element
         const appName = document.createElement("p");
-        appName.innerText = appData.name;
+        appName.innerText = parsedManifests[i].name;
 
         // Add all the elements together
         appAnchor.appendChild(appImage);
@@ -104,7 +106,7 @@ function generateTable(appList, columns) {
       }
       catch (error) {
         // Send error to log
-        log("APP ERROR [" + appList[i].name + "]" + error.toString());
+        log("APP ERROR [" + parsedManifests[i].name + "]" + error.toString());
       }
     }
 
@@ -119,9 +121,9 @@ function log(logData) {
   p.innerText = logData.toString();
   document.getElementById("log").appendChild(p);
 
-  var currentLog = JSON.parse(window.localStorage.getItem("latest.log"));
-  currentLog.push(new Date().toISOString() + " - " + logData);
-  window.localStorage.setItem("latest.log", JSON.stringify(currentLog));
+  // var currentLog = JSON.parse(window.localStorage.getItem("latest.log"));
+  // currentLog.push(new Date().toISOString() + " - " + logData);
+  // window.localStorage.setItem("latest.log", JSON.stringify(currentLog));
 }
 
 // Toggles the display of the log
@@ -152,7 +154,8 @@ function onPageLoad() {
 
   // Actually do the stuff
   // Get directory info for apps
-  getDirectory("../apps/").then(function (data) {
+  getDirectory("file:///mnt/us/apps/").then(function (data) {
+    document.getElementById("loading").remove()
     // Generate the actual table given the list of app folders
     generateTable(data);
   });

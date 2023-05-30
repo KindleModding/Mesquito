@@ -13,7 +13,6 @@
 
   <style>
     :root {
-      font-size: 0.25em; /*25px;*/
       overflow: hidden;
     }
 
@@ -58,7 +57,7 @@
       window.mesquito.updateNavigation()
 
       compatStyle = document.createElement("link");
-      compatStyle.setAttribute('href', 'file:///mnt/us/mesquito/main.css');
+      compatStyle.setAttribute('href', 'file:///mnt/us/mesquito/compatabilityWrapper.css');
       compatStyle.setAttribute('rel', 'stylesheet');
       event.target.contentDocument.body.appendChild(compatStyle)
     });
