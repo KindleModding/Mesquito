@@ -1,0 +1,116 @@
+{
+    "toolbar_icon": {
+        "id": "toolbar_icon",
+        "type": "toolbar_icon",
+        "imgSrc": "/app/toolbar/res/close.svg",
+        "flowTo": "toolbar_option_stylus"
+    },
+    "toolbar_option_stylus": {
+        "id": "toolbar_option_stylus",
+        "type": "mainOption",
+        "isCurrentTool": "false",
+        "isDefaultTool": "true",
+        "isSelectableTool": "true",
+        "isEnabled": "true",
+        "imgSrc": "/app/toolbar/res/stylus.svg",
+        "toolbarIcon": "/app/toolbar/res/stylus_icon.svg",
+        "imgSrc_selected": "/app/toolbar/res/stylus_selected.svg",
+        "a11yLabel": "Pointer",
+        "flowTo": "toolbar_option_sticky_note"
+    },
+    "toolbar_option_line_separation": {
+        "id": "toolbar_option_line_separation",
+        "type": "separationLine",
+        "isCurrentTool": "false",
+        "isSelectableTool": "false",
+        "isEnabled": "false",
+        "imgSrc": "/app/toolbar/res/separation_line.svg"
+    },
+    "toolbar_option_sticky_note": {
+        "id": "toolbar_option_sticky_note",
+        "type": "mainOption",
+        "isCurrentTool": "false",
+        "isSelectableTool": "true",
+        "isEnabled": "true",
+        "imgSrc": "/app/toolbar/res/sticky_note.svg",
+        "toolbarIcon": "/app/toolbar/res/sticky_note_icon.svg",
+        "imgSrc_selected": "/app/toolbar/res/sticky_note_selected.svg",
+        "a11yLabel": "Sticky note. To place a sticky note, double tap to select. Then tap the screen to choose a location for the note. Then, double tap to place the note. Sticky note ",
+        "flowTo": "toolbar_option_overflow"
+    },
+    "toolbar_option_overflow": {
+        "id": "toolbar_option_overflow",
+        "type": "mainOption",
+        "isCurrentTool": "false",
+        "isSelectableTool": "false",
+        "isEnabled": "true",
+        "imgSrc": "/app/toolbar/res/overflowmenu.svg",
+        "imgSrc_selected": "/app/toolbar/res/overflowmenu_selected.svg",
+        "subOptions" : "toolbar_suboption_overflow_dock_on_side",
+        "a11yLabel": "More options"
+    },
+    "toolbar_suboption_overflow_dock_on_side": {
+        "id": "toolbar_suboption_overflow_dock_on_side",
+        "optionText": "Move to right side",
+        "type": "subOption_textOnly",
+        "isCurrentTool": "false",
+        "isSelectableTool": "false",
+        "isEnabled": "true",
+        "a11yLabel": "Dock on Side"
+    },
+    "toolbar_tutorial_stylustoolbar": {
+        "id": "toolbar_tutorial_stylustoolbar",
+        "type": "tutorial_element",
+        "topOption": "toolbar_icon",
+        "bottomOption": "toolbar_option_overflow",
+        "verticalPadding": "true",
+        "titleText": "toolbar.tutorial.stylustoolbar.title",
+        "descText": "toolbar.tutorial.stylustoolbar.description",
+        "tutorialIndex" : "1",
+        "tutorialSize" : "4"
+    },
+    "toolbar_tutorial_minimize": {
+        "id": "toolbar_tutorial_minimize",
+        "type": "tutorial_element",
+        "topOption": "toolbar_icon",
+        "bottomOption": "toolbar_icon",
+        "verticalPadding": "false",
+        "titleText": "toolbar.tutorial.minimize.title",
+        "descText": "toolbar.tutorial.minimize.description",
+        "tutorialIndex" : "2",
+        "tutorialSize" : "1"
+    },
+    "toolbar_tutorial_pointer": {
+        "id": "toolbar_tutorial_pointer",
+        "type": "tutorial_element",
+        "topOption": "toolbar_option_stylus",
+        "bottomOption": "toolbar_option_stylus",
+        "verticalPadding": "false",
+        "titleText": "toolbar.tutorial.pointer.title",
+        "descText": "toolbar.tutorial.pointer.description",
+        "tutorialIndex" : "3",
+        "tutorialSize" : "1"
+    },
+    "toolbar_tutorial_stickynote": {
+        "id": "toolbar_tutorial_stickynote",
+        "type": "tutorial_element",
+        "topOption": "toolbar_option_sticky_note",
+        "bottomOption": "toolbar_option_sticky_note",
+        "verticalPadding": "false",
+        "titleText": "toolbar.tutorial.stickynote.title",
+        "descText": "toolbar.tutorial.stickynote.description",
+        "tutorialIndex" : "4",
+        "tutorialSize" : "1"
+    },
+    "toolbar_tutorial_overflow": {
+        "id": "toolbar_tutorial_overflow",
+        "type": "tutorial_element",
+        "topOption": "toolbar_option_overflow",
+        "bottomOption": "toolbar_option_overflow",
+        "verticalPadding": "false",
+        "titleText": "toolbar.tutorial.overflow.title",
+        "descText": "toolbar.tutorial.overflow.description",
+        "tutorialIndex" : "5",
+        "tutorialSize" : "1"
+    }
+}

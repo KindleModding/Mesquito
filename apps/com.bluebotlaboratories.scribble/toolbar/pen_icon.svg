@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>EC49550F-1339-4835-8B8D-30BDDDB32519</title>
+    <g id="Fundamentals" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Iconography" transform="translate(-647.000000, -2226.000000)">
+            <g id="Icon-/-Pen-/-Selected" transform="translate(647.000000, 2226.000000)">
+                <rect id="Rectangle" fill="#000000" x="0" y="0" width="24" height="24"></rect>
+                <g id="Group" transform="translate(13.358203, 13.660254) rotate(150.000000) translate(-13.358203, -13.660254) translate(5.358203, 3.660254)">
+                    <path d="M1,12 L15,12 C15.5522847,12 16,12.4477153 16,13 L16,17 C16,18.6568542 14.6568542,20 13,20 L3,20 C1.34314575,20 2.02906125e-16,18.6568542 0,17 L0,13 C-6.76353751e-17,12.4477153 0.44771525,12 1,12 Z" id="Rectangle" fill="#FFFFFF" stroke-linejoin="round" transform="translate(8.000000, 16.000000) rotate(180.000000) translate(-8.000000, -16.000000) "></path>
+                    <path d="M13,1 L13,8.26849418 L8,12.6679993 L3,8.26849418 L3,1 L13,1 Z" id="Rectangle-Copy-2" stroke="#FFFFFF" stroke-width="2" fill="#000000" transform="translate(8.000000, 7.000000) rotate(180.000000) translate(-8.000000, -7.000000) "></path>
+                    <line x1="8" y1="2" x2="8" y2="7" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

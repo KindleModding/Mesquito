@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>21E03DFE-E48C-4101-8EF3-77D5B40BEC10</title>
+    <g id="Toolbar-BOB-&amp;-Specs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Toolbar---GTK-selected-states---GTK-TOOLBAR-ONLY" transform="translate(-118.000000, -532.000000)">
+            <g id="Redo---Unselected---Light-Mode" transform="translate(118.000000, 532.000000)">
+                <rect id="Rectangle" x="0" y="0" width="56" height="56"></rect>
+                <g id="Icon-/-E-reader-/-Eraser-Copy-14" transform="translate(16.000000, 16.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Unselected" transform="translate(3.500000, 5.000000)" fill-rule="nonzero">
+                        <circle id="Oval" stroke="#000000" stroke-width="2" fill="#FFFFFF" transform="translate(8.000000, 8.000000) scale(-1, 1) translate(-8.000000, -8.000000) " cx="8" cy="8" r="8"></circle>
+                        <rect id="Rectangle" fill="#FFFFFF" transform="translate(12.500000, 12.500000) scale(-1, 1) translate(-12.500000, -12.500000) " x="7" y="7" width="11" height="11"></rect>
+                        <path d="M12.5702021,1.59066158 L13.7006825,5.534041 L17.244411,4.51869073 C17.7373805,4.37733401 18.2500853,4.63191565 18.4426978,5.0940661 L18.4813101,5.2043151 C18.6335404,5.7352052 18.3265759,6.2889838 17.7956857,6.4412141 L17.7956857,6.4412141 L13.2709243,7.7386686 C12.7400341,7.8908989 12.1862555,7.5839344 12.0340252,7.0530442 C12.0150441,6.9868493 12.003202,6.9202985 11.9980429,6.8542146 L10.6476787,2.14193629 C10.4954484,1.61104611 10.8024129,1.05726754 11.3333031,0.90503724 C11.8641932,0.75280693 12.4179718,1.0597714 12.5702021,1.59066158 Z" id="Combined-Shape" fill="#000000" transform="translate(14.564494, 4.321853) scale(-1, 1) translate(-14.564494, -4.321853) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

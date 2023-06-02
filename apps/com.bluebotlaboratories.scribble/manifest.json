@@ -1,0 +1,12 @@
+{
+  "minVersion": 1,
+  "version": 1,
+  "waf": true,
+  "id": "com.bluebotlaboratories.scribble",
+  "name": "Scribble",
+  "author": "Bluebotlaboratories",
+  "description": "Who needs a Scribe?",
+  "repo": "https://github.com/KWebBrew/KWebBrew",
+  "icon": "icon.jpg",
+  "entrypoint": "index.html"
+}

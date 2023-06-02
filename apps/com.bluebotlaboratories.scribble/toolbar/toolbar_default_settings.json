@@ -1,0 +1,13 @@
+{
+    "dock": "uninitialized",
+    "isHidden": "false",
+    "hide_toolbar_supported_apps": "com.lab126.yjop,com.lab126.yjlr",
+    "com.lab126.standalonenotebookeditor" : "/app/toolbar/res/toolbar_options_editor.json",
+    "com.lab126.stickynote" : "/app/toolbar/res/toolbar_options_stickynote.json",
+    "com.lab126.yjop" : "/app/toolbar/res/toolbar_options_yjop.json",
+    "com.lab126.yjlr" : "/app/toolbar/res/toolbar_options_yjlr.json",
+    "selectedSubOptionMap": "toolbar_option_pen:toolbar_suboption_pen,toolbar_option_eraser:toolbar_suboption_eraser_medium,toolbar_option_highlighter:toolbar_suboption_highlighter_medium",
+    "dynamicOptionMap": "toolbar_suboption_pen_stroke_thickness:thickness_option_medium,toolbar_suboption_fountain_pen_stroke_thickness:thickness_option_medium,toolbar_suboption_marker_stroke_thickness:thickness_option_medium,toolbar_suboption_pencil_stroke_thickness:thickness_option_medium",
+    "isCollapsed": "false",
+    "isClipboardEnabled": "false"
+}

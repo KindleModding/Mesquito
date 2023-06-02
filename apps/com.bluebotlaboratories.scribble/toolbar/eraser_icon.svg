@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>5A1412A8-DD5A-4DDD-814A-DCA000228C7B</title>
+    <g id="Toolbar-BOB-&amp;-Specs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Toolbar---GTK-selected-states---GTK-TOOLBAR-ONLY" transform="translate(-352.000000, -208.000000)">
+            <g id="Eraser---Unselected---Dark-Mode" transform="translate(336.000000, 192.000000)">
+                <g id="Icon-/-E-reader-/-Eraser-Copy-14" transform="translate(16.000000, 16.000000)">
+                    <rect id="Rectangle" fill="#000000" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Group" transform="translate(12.000000, 12.000000) rotate(150.000000) translate(-12.000000, -12.000000) translate(5.000000, 3.000000)">
+                        <path d="M7,1 C8.65685425,1 10.1568542,1.67157288 11.2426407,2.75735931 C12.3284271,3.84314575 13,5.34314575 13,7 L13,7 L13,15.25 C13,15.7332492 12.8041246,16.1707492 12.4874369,16.4874369 C12.1707492,16.8041246 11.7332492,17 11.25,17 L11.25,17 L2.75,17 C2.26675084,17 1.82925084,16.8041246 1.51256313,16.4874369 C1.19587542,16.1707492 1,15.7332492 1,15.25 L1,15.25 L1,7 C1,5.34314575 1.67157288,3.84314575 2.75735931,2.75735931 C3.84314575,1.67157288 5.34314575,1 7,1 Z" id="Rectangle" stroke="#FFFFFF" stroke-width="2" fill="#000000"></path>
+                        <path d="M13,10 L13,17 L1,17 L1,10 L13,10 Z" id="Rectangle" stroke="#FFFFFF" stroke-width="2" fill="#FFFFFF"></path>
+                        <line x1="2.1339746" y1="11.2679492" x2="12.1339746" y2="11.2679492" id="Line" stroke="#000000"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>7DBC50BA-38F2-4A54-B6E2-A42111F31254</title>
+    <g id="Toolbar-BOB-&amp;-Specs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Toolbar---GTK-selected-states---GTK-TOOLBAR-ONLY" transform="translate(-596.000000, -464.000000)">
+            <g id="Undo---Selected---Light-Mode" transform="translate(596.000000, 464.000000)">
+                <rect id="Rectangle" fill="#000000" x="0" y="0" width="56" height="56"></rect>
+                <g id="Icon-/-E-reader-/-Eraser-Copy-14" transform="translate(16.000000, 16.000000)">
+                    <rect id="Rectangle" fill="#000000" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Selected" fill-rule="nonzero">
+                        <rect id="Rectangle" fill="#000000" x="0" y="0" width="24" height="24"></rect>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill="#000000" cx="13" cy="13" r="8"></circle>
+                        <rect id="Rectangle" fill="#000000" x="3" y="12" width="11" height="11"></rect>
+                        <path d="M4.44121412,6.59066158 L5.57169449,10.534041 L9.11542302,9.51869073 C9.60839247,9.37733401 10.1210973,9.63191565 10.3137098,10.0940661 L10.3523221,10.2043151 C10.5045524,10.7352052 10.1975879,11.2889838 9.66669774,11.4412141 L9.66669774,11.4412141 L5.14193629,12.7386686 C4.61104611,12.8908989 4.05726754,12.5839344 3.90503724,12.0530442 C3.88605614,11.9868493 3.87421404,11.9202985 3.86905488,11.8542146 L2.51869073,7.14193629 C2.36646042,6.61104611 2.67342489,6.05726754 3.20431507,5.90503724 C3.73520524,5.75280693 4.28898381,6.0597714 4.44121412,6.59066158 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

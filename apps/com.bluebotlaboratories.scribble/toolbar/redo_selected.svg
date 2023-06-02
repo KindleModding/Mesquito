@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>12AF85F8-93C1-468A-93CD-0FB03A51E97D</title>
+    <g id="Toolbar-BOB-&amp;-Specs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Toolbar---GTK-selected-states---GTK-TOOLBAR-ONLY" transform="translate(-596.000000, -532.000000)">
+            <g id="Redo---Selected---Light-Mode" transform="translate(596.000000, 532.000000)">
+                <rect id="Rectangle" fill="#000000" x="0" y="0" width="56" height="56"></rect>
+                <g id="Icon-/-E-reader-/-Eraser-Copy-14" transform="translate(16.000000, 16.000000)">
+                    <rect id="Rectangle" fill="#000000" x="0" y="0" width="24" height="24"></rect>
+                    <g id="Selected" fill-rule="nonzero">
+                        <rect id="Rectangle" fill="#000000" x="0" y="0" width="24" height="24"></rect>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill="#000000" transform="translate(11.479693, 13.000000) scale(-1, 1) translate(-11.479693, -13.000000) " cx="11.4796935" cy="13" r="8"></circle>
+                        <rect id="Rectangle" fill="#000000" transform="translate(15.979693, 17.500000) scale(-1, 1) translate(-15.979693, -17.500000) " x="10.4796935" y="12" width="11" height="11"></rect>
+                        <path d="M16.0498956,6.59066158 L17.180376,10.534041 L20.7241045,9.51869073 C21.217074,9.37733401 21.7297788,9.63191565 21.9223913,10.0940661 L21.9610036,10.2043151 C22.1132339,10.7352052 21.8062694,11.2889838 21.2753792,11.4412141 L21.2753792,11.4412141 L16.7506178,12.7386686 C16.2197276,12.8908989 15.665949,12.5839344 15.5137187,12.0530442 C15.4947376,11.9868493 15.4828955,11.9202985 15.4777364,11.8542146 L14.1273722,7.14193629 C13.9751419,6.61104611 14.2821064,6.05726754 14.8129966,5.90503724 C15.3438867,5.75280693 15.8976653,6.0597714 16.0498956,6.59066158 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(18.044188, 9.321853) scale(-1, 1) translate(-18.044188, -9.321853) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>56C932DE-977B-4E8A-B24B-ABDDD14599F1</title>
+    <g id="Toolbar-BOB-&amp;-Specs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Toolbar---GTK-selected-states---GTK-TOOLBAR-ONLY" transform="translate(-118.000000, -396.000000)">
+            <g id="Undo---Unselected---Light-Mode" transform="translate(118.000000, 396.000000)">
+                <rect id="Rectangle" x="0" y="0" width="56" height="56"></rect>
+                <g id="Icon-/-E-reader-/-Eraser-Copy-14" transform="translate(16.000000, 16.000000)">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="24" height="24"></rect>
+                    <circle id="Oval" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="13" cy="13" r="8"></circle>
+                    <rect id="Rectangle" fill="#FFFFFF" x="3" y="12" width="11" height="11"></rect>
+                    <path d="M4.44121412,6.59066158 L5.57169449,10.534041 L9.11542302,9.51869073 C9.60839247,9.37733401 10.1210973,9.63191565 10.3137098,10.0940661 L10.3523221,10.2043151 C10.5045524,10.7352052 10.1975879,11.2889838 9.66669774,11.4412141 L9.66669774,11.4412141 L5.14193629,12.7386686 C4.61104611,12.8908989 4.05726754,12.5839344 3.90503724,12.0530442 C3.88605614,11.9868493 3.87421404,11.9202985 3.86905488,11.8542146 L2.51869073,7.14193629 C2.36646042,6.61104611 2.67342489,6.05726754 3.20431507,5.90503724 C3.73520524,5.75280693 4.28898381,6.0597714 4.44121412,6.59066158 Z" id="Combined-Shape" fill="#000000"></path>
+                    <g id="Unselected" transform="translate(2.500000, 5.000000)" fill-rule="nonzero">
+                        <circle id="Oval" stroke="#000000" stroke-width="2" fill="#FFFFFF" cx="10.5203055" cy="8" r="8"></circle>
+                        <rect id="Rectangle" fill="#FFFFFF" x="0.520305509" y="7" width="11" height="11"></rect>
+                        <path d="M1.96151963,1.59066158 L3.092,5.534041 L6.63572853,4.51869073 C7.12869798,4.37733401 7.64140281,4.63191565 7.83401531,5.0940661 L7.87262761,5.2043151 C8.02485791,5.7352052 7.71789341,6.2889838 7.18700325,6.4412141 L7.18700325,6.4412141 L2.6622418,7.7386686 C2.13135162,7.8908989 1.57757305,7.5839344 1.42534275,7.0530442 C1.40636165,6.9868493 1.39451955,6.9202985 1.38936039,6.8542146 L0.0389962388,2.14193629 C-0.113234071,1.61104611 0.193730399,1.05726754 0.724620579,0.90503724 C1.25551075,0.75280693 1.80928932,1.0597714 1.96151963,1.59066158 Z" id="Combined-Shape" fill="#000000"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

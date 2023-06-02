@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect width="56" height="56"/>
+  <path id="Pen_T2" data-name="Pen T2" class="cls-1" d="m12,20.83c4.11-3,9.12-4.8,14.95-7.28-8.42,11.34-12.66,17.34-13.68,25.92,10.5-10.22,14.73-13.79,24.01-15.7-5.39,7.89-9.01,11.66-8.98,18.68,7.39-1.02,16.8-15.22,15.59-1.03"/>
+</svg>
