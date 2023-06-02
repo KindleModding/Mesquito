@@ -115,6 +115,16 @@ window.mesquito.log = function(toLog) {
   window.localStorage.setItem("log", JSON.stringify(storageLog))
 }
 
+// Taken from /opt/var/local/mesquite/shared/javascripts/device.js
+window.mesquito.convertPointsToPixels = function(points) {
+  if (typeof points === 'number') {
+    return parseInt(points * device.DPI / pointsPerInch);
+  }
+  else {
+    throw 'convertPointsToPixels method requires a number argument.';
+  }
+}
+
 window.mesquito.updateNavigation = function () {
   var chromeBarConfig = {
     "appId": "com.lab126.store",
@@ -206,4 +216,80 @@ kindle.appmgr.ongo = function (context) {
 
   kindle.messaging.receiveMessage('searchBarButtonSelected', kindleButtonCallbackFunction);
   kindle.messaging.receiveMessage('systemMenuItemSelected', kindleButtonCallbackFunction);
+}
+
+
+/*
+nativeBridgeRunner(
+	'default_status_bar',
+	function() 
+	{
+		// Get the Screen saver prevention status
+		return nativeBridge.getIntLipcProperty(
+			'com.lab126.powerd', 
+			'preventScreenSaver'
+		);
+	}, 
+	function(retVal) {
+		document.write('preventScreenSaver is set to '+retVal+'<br>');
+	}
+);
+*/
+
+function nativeBridgeRunner(pillowID, fkt, callback)
+{
+	//--------------------------------------------------------------------------
+	// Get function string to use (supplied function object or string )
+	var fktString = '';
+	if( fkt && {}.toString.call(fkt) === '[object Function]' )
+		fktString = fkt.toString();
+	else
+		fktString = "function(){" + fkt + "}";
+		
+	//--------------------------------------------------------------------------
+	// Empty function, exit
+	if( fktString === undefined || fktString.length <= 0 ) return;
+	
+	//--------------------------------------------------------------------------
+	// Get a (at least a little bit) unique key
+	var cmdKey = Math.floor((Math.random()*10000000000)).toString();
+
+  var appID = "com.lab126.store";
+	//--------------------------------------------------------------------------
+	// Build the command we send to pillow
+	var cmdVal=	"nativeBridge.setLipcProperty('"+appID+"','"+cmdKey+"'," +
+					"function(){" +
+						"try{" +
+							"return " + fktString + "().toString();" + 
+						"}" +
+						"catch(err){" + 
+							"return err;" + 
+						"}" +
+					"}()" +
+				");";
+	
+	//--------------------------------------------------------------------------
+	// Strip all non-wanted whitespace characters from command
+	//cmdVal = cmdVal.replace(/[\t\r\n]+/g, "");
+
+	//--------------------------------------------------------------------------
+	// Register event handler for the callback if callback is defined
+	if( callback && {}.toString.call(callback) === '[object Function]' )
+	{
+		kindle.messaging.receiveMessage(cmdKey, function(message, value) 
+		{ 
+			callback(value); 
+		});					
+	}
+	
+	//--------------------------------------------------------------------------
+	// Send pillow the message to execute supplied code
+	kindle.messaging.sendMessage(
+		'com.lab126.pillow', 
+		'interrogatePillow', 
+		{
+			"pillowId": pillowID, 
+			"function": cmdVal
+		}
+	);
 }

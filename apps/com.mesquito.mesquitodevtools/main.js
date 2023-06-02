@@ -5,7 +5,6 @@ var lastCommands = [];
 function log(logStuff) {
     document.getElementById("log").innerHTML += "\n" + logStuff.toString();
     document.getElementById("log").scrollTop = document.getElementById("log").scrollHeight;
-    window.mesquito.log(logStuff);
 }
 
 function restorePrevious() {
@@ -56,6 +55,15 @@ function updateLastCommandList() {
 function runJS() {
     const code = document.getElementById("consoleInput").value;
 
+    var output = internalRunJS(code)
+
+    document.getElementById("consoleInput").value = "";
+    log(output.toString());
+
+    updateLastCommandList();
+}
+
+function internalRunJS(code) {
     lastCommands.push(code);
     lastCommandIndex = lastCommands.length - 1;
 
@@ -71,10 +79,28 @@ function runJS() {
         output = JSON.stringify(output);
     }
 
-    document.getElementById("consoleInput").value = "";
-    log(output.toString());
+    return output
+}
 
-    updateLastCommandList();
+function serverThink() {
+    const IP = document.getElementById("IPInput").value;
+
+    fetch('http://' + IP + '/getCommand').then(function (response) {return response.json()}).then(
+        function (response) {
+            if (!response.result) {
+                return
+            }
+        
+            log("Recieved Command:" + decodeURIComponent(response.result.toString()));
+            const result = internalRunJS(decodeURIComponent(response.result.toString()));
+            log(result.toString());
+            fetch('http://' + IP + '/sendOutput/' + encodeURIComponent(encodeURIComponent(result.toString())));
+        }
+    )
+}
+
+function connectToServer() {
+    setInterval(serverThink, 300);
 }
 
 function callbackFunction(property, json) {

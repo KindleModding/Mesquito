@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SJS</title>
+
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>SJS</h1>
+  <p>Simple "SSH but JS" for Mesquito</p>
+
+  <textarea rows=10 id="log"></textarea>
+  <form class="userInput" action="#">
+    <input type="text" id="consoleInput">
+    <button onclick="runJS()">RUN</button>
+  </form>
+
+  <script>
+    function runJS() {
+      fetch('/sendCommand/' + encodeURIComponent(encodeURIComponent(document.getElementById('consoleInput').value)));
+    }
+
+    setInterval(() => {
+      fetch('/getOutput').then((response) => response.json()).then((response) => {
+        if (decodeURIComponent(response.result.toString())) {
+          log(decodeURIComponent(response.result.toString()))
+        }
+      })
+    }, 300)
+
+    function log(logStuff) {
+      document.getElementById("log").innerHTML += "\n" + logStuff.toString();
+      document.getElementById("log").scrollTop = document.getElementById("log").scrollHeight;
+    }
+  </script>
+</body>
+
+</html>

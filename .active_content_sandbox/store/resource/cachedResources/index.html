@@ -14,24 +14,10 @@
                 storeContext = { startupMetrics: {} };
             }
 
-            // This needs to go before any other script or link tags to prevent
-            // including the time needed to parse and load those resources
-            storeContext.startupMetrics.remoteLandingPage = { start: new Date() };
-            storeContext.lastUpdateTime = "2023-02-27T09:58:29";
-
-            // check the application cache status before the cache starts updating
-            storeContext.uncachedAtStartup = false;//(applicationCache.status === applicationCache.UNCACHED);
-
-            var storeConfig = { "configCreationTime": 1677491909612, "orderConfirmationOn": 1, "refineNodeData": { "date": { "last90": "367746031", "comingSoon": "367747031", "last30": "367745031" }, "rating": { "threeStar": "358672031", "oneStar": "358674031", "fourStar": "358671031", "twoStar": "358673031" } }, "isAudibleSupported": true, "aapiCsrfToken": "1@g1d6QFvrtMAtnQRSzDIho21ViAgxtrestZVB9MW+jehLAAAAAQAAAABj/H7FcmF3AAAAAGfA1H5nd8xGEcC39YpWbw==@53Y0XS", "applicationCacheLoadDelayInMs": 6000, "isJunoDPMigratedToGXA": true, "language": "en", "chromeHeight": 158, "CSPhoneWithin": "0800 496 2449", "hasDomesticAddress": 0, "bgUpdateInterval": 900000, "showRedeemLink": 1, "isTardisSupportEnabledForVersion": 1, "isDeviceAudibleSupported": true, "noCoverImageUrl": "https://m.media-amazon.com/images/G/01/x-site/icons/no-img-sm._V192198896_.jpg", "shouldShowJunoReadNow": true, "ebooksBuyBoxJunoBifrostMigrationWeblabStatus": true, "isAuthorPageJunoWeblabStatus": 0, "isKFE": 0, "httpsImageServer": "https://m.media-amazon.com", "deviceType": "AJRLVDTOPT1LE", "asrMode": 0, "csrfTokenForRoamingAction": "gNvMzNsd7zEOmTL3qSxOr09fb1ECNeb0mSA9KjAAAAAMAAAAAGP8fsVyYXcAAAAA", "deviceFamily": "Moonshine", "serverTimeZone": "GMT+00:00", "browseSearchListViewPageSize": 6, "weblabs": {}, "dppuiDefaultVariant": "JUNO", "displayUrl": "Amazon.co.uk", "isSplitStoreEnabled": 1, "isJuno": 1, "CSPhoneOutside": "+44 (0)800 496 2449", "csrfToken": "gJxIFLhGLVazo2cFo+ySjBLFF7Za9fzfuR707mEAAAAMAAAAAGP8fsVyYXcAAAAA", "horizonteJunoUIEndpoints": { "wishlist": { "marketplace": "JunoStoreConfig.horizonteWishlist", "isMigrated": 1 }, "gpdetail": { "storeType": "ebooks", "isUDP": "true", "isEnabledForUnregisteredCustomers": "true", "title": "juno_title_bar_book_details", "weblabRefactorWeblab": "DBS_JUNO_UDP_WEBLAB_REFACTOR_130142", "url": "/gp/digital/juno/udp", "isMigrated": 1 }, "audiblethankyoupage": { "messageUrl": "/kindle-dbs/sub-controllers/typ-message", "storeType": "audible", "title": "aud_er_title_typ", "url": "/kindle-dbs/thankYouPage?storeType=audible", "isMigrated": 1 }, "audiblebrowse": { "country": ["US", "CN", "JP", "NL", "AU", "BR", "DE", "IT", "GB", "MX", "FR", "ES", "IN", "CA"], "storeType": "audible", "categories": ["search", "topsellers", "recommendations", "s9", "similarities", "allEditions", "bestsellers", "noteworthy", "asinlist", "viewToPurchaseItems", "wishlist"], "devicePlatform": ["Celeste", "Pinot", "Icewine", "Bourbon", "Muscat", "Whisky", "Eanab", "Cognac", "Moonshine", "Baijiu", "Jaeger", "Stinger", "Malbec", "Cava", "Barolo"], "isEnabledForUnregisteredCustomers": "true", "title": "juno_title_bar_browse_category_results", "locale": ["en_US", "en_GB", "de_DE", "fr_FR", "es_ES", "it_IT", "zh_CN", "ja_JP", "en_IN", "pt_BR", "en_CA", "fr_CA", "es_MX", "en_AU", "en_NL", "nl_NL"], "url": "/kindle-dbs/browse?storeType=audible", "isMigrated": 1 }, "audiblebrowsecategory": { "storeType": "audible", "isEnabledForUnregisteredCustomers": "true", "title": "aud_er_title_browse_categories", "url": "/kindle-dbs/browsecategories?storeType=audible", "isMigrated": 1 }, "mfaAuthorizePayments": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_third_party_redirect", "url": "/dppui/third-party-redirect", "isMigrated": 1 }, "thankYouPage": { "messageUrl": "/kindle-dbs/sub-controllers/typ-message", "storeType": "ebooks", "title": "juno_title_bar_thank_you_page", "url": "/kindle-dbs/thankYouPage", "isMigrated": 1 }, "selectPayment": { "country": ["IN"], "storeType": "ebooks", "marketplace": "JunoStoreConfig.selectPaymentEnabled", "locale": ["en_IN"], "url": "/dppui/select-payment/nonAui" }, "search": { "storeType": "ebooks", "isEnabledForUnregisteredCustomers": "true", "title": "juno_title_bar_search_results", "url": "/kindle-dbs/search", "isMigrated": 1 }, "menuData": { "url": "/kindle-dbs/menuData", "isMigrated": 1 }, "addCard": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_add_card", "url": "/dppui/add-card/nonAui", "isMigrated": 1 }, "browseCategory": { "storeType": "ebooks", "isEnabledForUnregisteredCustomers": "true", "title": "juno_title_bar_browse_categories", "url": "/kindle-dbs/browsecategories", "isMigrated": 1 }, "confirmCredentials": { "storeType": "ebooks", "url": "/dppui/confirm-credentials", "isMigrated": 1 }, "address": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_address_fixup", "url": "/dppui/address", "isMigrated": 1 }, "clarificationsPage": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_clarification_page", "url": "/dppui/clarifications", "isMigrated": 1 }, "ell": { "storeType": "ebooks", "marketplace": "JunoStoreConfig.ellEnabled", "url": "/kindle-dbs/ell?nodeId=1437806071" }, "audiblesearch": { "country": ["US", "CN", "JP", "NL", "AU", "BR", "DE", "IT", "GB", "MX", "FR", "ES", "IN", "CA"], "storeType": "audible", "devicePlatform": ["Celeste", "Pinot", "Icewine", "Bourbon", "Muscat", "Whisky", "Eanab", "Cognac", "Moonshine", "Baijiu", "Jaeger", "Stinger", "Malbec", "Cava", "Barolo"], "isEnabledForUnregisteredCustomers": "true", "title": "aud_er_title_search_results", "locale": ["en_US", "en_GB", "de_DE", "fr_FR", "es_ES", "it_IT", "zh_CN", "ja_JP", "en_IN", "pt_BR", "en_CA", "fr_CA", "es_MX", "en_AU", "en_NL", "nl_NL"], "url": "/kindle-dbs/search?storeType=audible", "isMigrated": 1 }, "clp": { "storeType": "ebooks", "isEnabledForUnregisteredCustomers": "true", "url": "/kindle-dbs/clp", "isMigrated": 1 }, "author": { "country": ["US", "CN", "JP", "NL", "AU", "BR", "DE", "IT", "GB", "MX", "FR", "ES", "IN", "CA"], "storeType": "ebooks", "devicePlatform": ["Celeste", "Pinot", "Icewine", "Bourbon", "Muscat", "Whisky", "Eanab", "Cognac", "Moonshine", "Baijiu"], "isEnabledForUnregisteredCustomers": "true", "title": "juno_title_bar_search_results", "locale": ["en_US", "en_GB", "de_DE", "fr_FR", "es_ES", "it_IT", "zh_CN", "ja_JP", "en_IN", "pt_BR", "en_CA", "fr_CA", "es_MX", "en_AU", "en_NL", "nl_NL"], "url": "/kindle-dbs/entity/author", "isMigrated": 1 }, "remoteLandingPage": { "storeType": "ebooks", "manifestUrl": "/kindle-dbs/storeManifest", "primaryStoreUrl": "/kindle-dbs/primaryStore", "secondaryStoreUrl": "/kindle-dbs/secondaryStore", "isEnabledForUnregisteredCustomers": "true", "isMigrated": 1 }, "dlp": { "storeType": "ebooks", "persistentIframeId": "dlpExternalFrame", "isEnabledForUnregisteredCustomers": "true", "url": "/kindle-dbs/dlp", "isMigrated": 1 }, "audiblerlp": { "storeType": "audible", "isEnabledForUnregisteredCustomers": "true", "title": "aud_er_title_rlp", "url": "/kindle-dbs/rlp?storeType=audible", "isMigrated": 1 }, "mfaOutOfBand": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_mfa_out_of_band", "url": "/dppui/oob-notification", "isMigrated": 1 }, "audibledetail": { "storeType": "audible", "isUDP": "true", "isEnabledForUnregisteredCustomers": "true", "title": "aud_er_title_detail", "url": "/gp/digital/juno/udp?storeType=audible", "isMigrated": 1 }, "noRedirect": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_no_redirect_page", "url": "/dppui/no-redirect", "isMigrated": 1 }, "audiblestorefront": { "storeType": "audible", "persistentIframeId": "audibleStorefrontExternalFrame", "isEnabledForUnregisteredCustomers": "true", "title": "aud_er_title_storefront", "url": "/kindle-dbs/storefront?storeType=audible", "isMigrated": 1 }, "rlp": { "storeType": "ebooks", "persistentIframeId": "rlpExternalFrame", "isEnabledForUnregisteredCustomers": "true", "title": "juno_recommended_for_you", "url": "/kindle-dbs/rlp", "isMigrated": 1 }, "shippingAddress": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_shipping_address_fixup", "url": "/dppui/default-address", "isMigrated": 1 }, "detail": { "storeType": "ebooks", "isUDP": "true", "isEnabledForUnregisteredCustomers": "true", "title": "juno_title_bar_book_details", "weblabRefactorWeblab": "DBS_JUNO_UDP_WEBLAB_REFACTOR_130142", "url": "/gp/product/ajax", "isMigrated": 1 }, "audibledlp": { "storeType": "audible", "isEnabledForUnregisteredCustomers": "true", "url": "/kindle-dbs/dlp?storeType=audible", "isMigrated": 1 }, "paySelect": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_pay_select_page", "url": "/dppui/pay-select", "isMigrated": 1 }, "authorizePayments": { "displayType": "foreground", "storeType": "ebooks", "title": "juno_title_bar_third_party_redirect", "url": "/dppui/third-party-redirect", "isMigrated": 1 }, "storefront": { "storeType": "ebooks", "persistentIframeId": "storefrontExternalFrame", "isEnabledForUnregisteredCustomers": "true", "title": "juno_title_bar_storefront", "url": "/kindle-dbs/storefront.html", "isMigrated": 1 }, "audibleclp": { "storeType": "audible", "isEnabledForUnregisteredCustomers": "true", "url": "/kindle-dbs/clp?storeType=audible", "isMigrated": 1 }, "browse": { "storeType": "ebooks", "categories": ["search", "topsellers", "recommendations", "s9", "similarities", "allEditions", "bestsellers", "noteworthy", "asinlist", "viewToPurchaseItems", "wishlist", "nfcx"], "isEnabledForUnregisteredCustomers": "true", "title": "juno_title_bar_browse_category_results", "url": "/kindle-dbs/browse", "isMigrated": 1 } }, "issVersion": 2, "dsn": "G000PP13027508DF", "kuUrl": "/gp/digital/juno/ku/about", "searchRedirectKeywordsMap": { "e-book": "ebooks", "audible": "audible", "ebooks": "ebooks", "audio": "audible", "kindle": "ebooks" }, "userAgentDpi": 300, "locale": "en_GB", "searchSuggestionsUrl": "https://completion.amazon.co.uk/api/2017/suggestions?method=completion&mid=A1F83G8C2ARO7P&alias=digital-text&client-id=kindle&suggestion-types=keyword&prefix=", "hasPaymentApp": 1, "isWishlistSupported": 1, "baroloCustomerReviewChange": true, "dppuiDefaultClientId": "dbs", "hideDimsumZeroPrice": 0, "ebooksSampleJunoBifrostMigrationWeblabStatus": true, "customerId": "ANKCLVHF9QHV", "requestedLocale": "en-GB", "marketplaceRegion": "UK", "storeType": "ebooks", "csrfTokenForSetOrderConfirmationStatus": "gO7/mbCQ/bGuRWJq9Oif1fBD4+3d32khftrydUYAAAAMAAAAAGP8fsVyYXcAAAAA", "mykUrl": "www.amazon.co.uk/manageyourkindle", "ebooksPreOrderJunoBifrostMigrationWeblabStatus": true, "marketplaceId": "A1F83G8C2ARO7P", "kindlePaymentSettings": { "preferenceType": "DefaultOneClick", "isEnabled": false }, "suppressedCustomerId": "HF9QHV", "baroloSearchBrowseChange": true, "bacchusConfig": {}, "blackCurtainConfig": { "setSessionMetricName": "BlackCurtain:HZ:set-black-curtain-session", "setSessionEndpoint": "/black-curtain/save-eligibility/black-curtain", "getSessionMetricName": "BlackCurtain:HZ:get-black-curtain-session", "getSessionEndpoint": "/kindle-dbs/black-curtain/session" } };
-
-            storeContext.uri = {
-                sprite: "https://m.media-amazon.com/images/G/01/kindle/store/juno/juno-store-sprite-01.png"
-            };
-
-            storeContext.clientVersion = "1.0.203906.0";
-            storeContext.rlpReqType = "tmd";
-            storeContext.hasManifest = 1;
-            storeContext.isSibSupportedByDevice = 1;
+            storeContext.isPartialPreload = true;
+            storeContext.isStoreLoaded = true;
+            window.storeContext.isPartialPreload = true;
+            window.storeContext.isStoreLoaded = true;
         }
     </script>
 
@@ -41,247 +27,25 @@
             if (!kindle || typeof kindle === 'undefined') {
                 var kindle = window.kindle || top.kindle;
             }
-            var host = kindle;
 
-            if (host.dev.webkitLog) {
-                host.dev.webkitLog('on');
+            if (kindle.dev.webkitLog) {
+                kindle.dev.webkitLog('on');
             }
-
-            var Locale = window.Locale || top.Locale;
-            var DateTimeFormat = window.DateTimeFormat || top.DateTimeFormat;
-            var NumberFormat = window.NumberFormat || top.NumberFormat;
-            var strings, images;
-            strings = {};
-            var just = {};
-
-            if (storeConfig && storeConfig.locale) {
-                just.storeLocale = new Locale(storeConfig.locale.replace('_', '-'));
-            } else {
-                just.storeLocale = new Locale('en-US');
-            }
-            storeContext.startupMetrics.startupJs.end = new Date();
-
-            // While the sprites can have a easy url fallbacks, script tags are not so easy
-            // The only way to make it work with the store code is to block unti it's loaded
-            // and I only want to do that if we find that there is a problem
-
-            storeContext.startupMetrics.jQueryLoad = { start: new Date() };
-
-            if (!storeContext.cacheTriggersKey) {
-                storeContext.cacheTriggersKey = host.dconfig.getValue('mesquite.interceptorIndicator');
-            }
-
-            if (!host.dev.loadResource('storeFrame', 'jquery')) {
-                host.dev.log('loadResource', 'failed to load jQuery, falling back error screen', 'error');
-            }
-
-            storeContext.startupMetrics.jQueryLoad.end = new Date();
-
-            jQuery(function () {
-                jQuery('body').bind('storePreLoad', function () {
-                    // Things that should happen after the store code is parsed but before
-                    // the store starts executing
-
-                    var beginExecute = new Date();
-
-                    storeContext.startupMetrics.storeBeginExecuteToEndExecute = { start: beginExecute };
-
-                    if (host.dev.loadResource('storeFrame', 'sprite_v1')) {
-                        storeContext.junoCssString += ' .sprited, button.close { background-image: url("' + storeContext.sprite + '"); }';
-                        storeContext.junoCssString += ' .softCacheSprite { background-image: url("' + storeContext.softCacheSprite + '"); }';
-                    } else {
-                        host.dev.log('loadResource', 'failed to load sprites, falling back to CDN', 'error');
-                        storeContext.junoCssString += ' .sprited, button.close { background-image: url("' + storeContext.uri.sprite + '"); }';
-                    }
-
-                });
-
-                jQuery('body').bind('storePostLoad', function () {
-                    // Things that should happen after the store code has executed.
-
-                    storeContext.startupMetrics.storeBeginExecuteToEndExecute.end = new Date();
-                    // set a flag indicating store was loaded.
-                    storeContext.isStoreLoaded = true;
-
-                    if (storeContext.uncachedAtStartup && !storeContext.cacheTriggersKey) {
-                        document.getElementById('upgradeMessage').style.visibility = 'visible';
-                    }
-
-                    // We flash the screen to ensure the message is displayed immediately
-                    // after the HTML is parsed, instead of waiting for the JavaScript to download.
-                    // We trigger a full flash after 15 damage signals, Number of damage signals is not equal to the number of swipes
-                    // For eg. pages like listView produces 2-3 damage signals per swipe.
-                    host.dev.setSensitivity(true, 1500);
-                });
-            });
-
-            storeContext.startupMetrics.storeJs = { start: new Date() };
-            storeContext.developer = 0;
-
-
-
-            storeContext.kuBrowseNode = '';
-
-            // The wait time for reshowing Kindle Unlimited first run upsell
-            storeContext.kuFirstRunWaitTime = parseInt("7776000") || 7776000;
-            // Don't attempt to load the first run unless this value is set 
-            storeContext.kuFirstRunInMarketplace = parseInt("0");
+            storeContext.developer = 1;
 
         }
     </script>
 
     <script>
-        function Controller() {
-            function a(a, c, d) {
-                v.disableGestures(); d.loadingIndicatorNode && a.append(d.loadingIndicatorNode); just.util.isKFE() || 2.5 <= just.util.getDeviceSoftwareGeneration() ? (c || menuUtil.closeAllMenus(), createMainSystemMenu(r)) : setStorefrontButton("storefront" == d.originalAction); d && "externalPage" == d.action && d.persistentIframeId ? (f(), v.showPersistentExternalPage(d.persistentIframeId, a)) : (v.hidePersistentExternalPages(), b(d.displayType, a)); a.find(".truncate").each(function (a, b) { truncate(b) });
-                F && F.persistentIframeId && F.persistentIframeId != d.persistentIframeId && controller.persistedFramesDeferred[F.persistentIframeId] && controller.persistedFramesDeferred[F.persistentIframeId].resolve(); v.clearActiveActions(topChromeWindow)
-            } function b(a, b) { "foreground" == a ? d("foregroundContent", "content", b) : "background" == a ? d("content", void 0, b) : (d("content", "foregroundContent", b), d("foregroundContent", void 0, void 0)) } function d(a, b, c) { a = jQuery("#" + a); e(a); c && a.append(c); b && (jQuery("#" + b).hide(), a.show()) } function c() {
-                e(jQuery("#foregroundContent"));
-                return e(jQuery("#content"))
-            } function e(a) { just.util.isAsrEnabled() && a.removeAttr("juno-store-info"); return a.empty() } function f() { c(); jQuery("#foregroundContent").hide(); jQuery("#content").hide() } function h(a, b, c) {
-                !b || "thankYouPage" !== b.action && 1 != b.disableHistory || c && "mfaOutOfBand" == c.originalAction || (b.detailPage = b.buyResult = b.asinData = null); c && "buy" === c.redirectFromAction && delete c.redirectFromAction; !c || "thankYouPage" !== c.action && 1 != c.disableHistory || (a = !1); b && 1 == b.disablePreviousHistory && (a =
-                    !1); b && b.prevStoreType && c && (c.storeType = b.prevStoreType); (just.util.isKFE() || 2.5 <= just.util.getDeviceSoftwareGeneration()) && c && ("storefront" === c.action || "storefront" == c.originalAction) && b && b.action == (c.originalAction || c.action) || (b && c && "noRedirect" === b.originalAction && "paySelect" === c.originalAction && (b.previousPage = encodeURIComponent(JSON.stringify(c))), a ? (c && "mfaOutOfBand" != c.originalAction && (a = jQuery.extend({ back: 1 }, c), a = just.util.hashToQueryParameters(a), host.appmgr.saveContext(a), host.dev.log("controller",
-                        "kindle.appmgr.saveContext() called with context: " + a, "debug")), !just.util.isKFE() && b && c && window.history.pushState(b, "", "?" + just.util.hashToQueryParameters(b))) : just.util.isKFE() || window.history.replaceState(b, "", "?" + just.util.hashToQueryParameters(b)), !c || "thankYouPage" !== c.action && 1 != c.disableHistory ? (z = b, F = c) : z = b)
-            } function g(a, b) {
-                var c = ciMetricController.isValidAction(b), d = {
-                    start: new jQuery.Deferred, ready: new jQuery.Deferred, softCacheComplete: new jQuery.Deferred, complete: new jQuery.Deferred, criticalInteractive: c ?
-                        ciMetricController.resetTracker(b) : null
-                }, e = { event: a, start: d.start.promise(), ready: d.ready.promise(), softCacheComplete: d.softCacheComplete.promise(), complete: d.complete.promise(), criticalInteractive: c ? d.criticalInteractive.promise() : null }; jQuery.each(G, function (a, b) { b(e) }); return d
-            } function l(a, b) { function c() { var a = !0; jQuery.each(d, function (b, c) { a &= c.complete }); a && b(); return a } var d = a.find("img"); c() || (d.load(function () { c() }), c()) } function k(b, c, d) {
-                function e() {
-                    var a = prefs.get("storeSessionMetrics");
-                    a && void 0 !== a.storeActive && 1 == a.storeActive.value && (a.detailPageVisitCountBeforeCrash = a.detailPageVisitCount, a.allPagesVisitCountBeforeCrash = a.allPagesVisitCount); a && (jQuery.each(a, function (a, b) { var c = b && b.value; if (c) { var d = b.range, e = c; d && 1 != d && (e = c % d, e = c - e + 1 + "-" + (c - e + d)); metrics.counter({ name: a, count: 1, breakdown: { count: e } }) } }), metrics.flush()); a = { confirmOrderCount: { value: 0 }, paymentFixupCount: { value: 0 }, detailPageVisitCount: { value: 0, range: 5 }, allPagesVisitCount: { value: 0, range: 5 } }; just.util.isJuno() &&
-                        5 > just.util.getDeviceSoftwareGeneration() && (a.storeActive = { value: 1 }); prefs.set("storeSessionMetrics", a)
-                } function f() { E && (E.end = new Date, controller.reportStartupMetrics(p), storeContext.uncachedAtStartup && metrics.reportDataEvent("appCacheDownload", 1), controller.reportLastStoreAccess()) } if (b && controller.isDeviceRegistered() && !b.forceMesquite) {
-                    if ("detail" === b.action && b.asin && controller.isValidAsinCategoryForBacchus(b) && controller.isBacchusWeblabEnabled(b)) {
-                        var k = controller.buildBacchusLaunchUri(b); host.dev.log("controller",
-                            "Launching to Bacchus endpoint via URI: ", k.toString(), "debug"); host.appmgr.start(k.toString()); return
-                    } if ("kppPurchase" === b.action) {
-                        k = new AsinDataProxy(b.asin, !1, 900); k = new PurchaseComponent(k, { priceInfo: { amount: b.price, currency: b.currencyCode, skipNormPrice: !0 } }); k.setIsFromInlinePurchase(); var m = jQuery("\x3cbutton /\x3e"); host && host.net && host.net.ensureConnection && host.net.ensureConnection("all", !1, function (a) { }); var H = { bifrostEnabled: !0, csrfToken: decodeURIComponent(b.csrfToken) }; k.buy(m, void 0,
-                            "kppPurchase", {}, void 0, H, void 0); return
-                    } if ("kppPrimeBorrow" === b.action || "kppKuBorrow" === b.action || "kppBorrow" === b.action) {
-                        k = new AsinDataProxy(b.asin, !1, 900); k = new PurchaseComponent(k, []); k.setIsFromInlinePurchase(); m = jQuery("\x3cbutton /\x3e"); host && host.net && host.net.ensureConnection && host.net.ensureConnection("all", !1, function (a) { }); k.bifrostEbookBorrow(m, void 0, "kppBorrowFallback_" + b.borrowProgramName, "PRIME" === b.borrowProgramName || "kppPrimeBorrow" === b.action, void 0, !1, decodeURIComponent(b.csrfToken),
-                            b.borrowProgramName, b.borrowProgramChannel, b.borrowButtonAction, !1, void 0); return
-                    } if ("kppRedeemPromo" === b.action) { controller.showGiftCardSetting(controller.getCurrentPageContext()); return }
-                } just.util.isKFE() && "function" === typeof controller.closeDialog && controller.closeDialog(); controller.removeExternalFrame(); controller.kuOverride = b.override; "1" === b.ignoreCtData && (storeContext.ignoreCtData = 1, host.dev.log("controller", "Cache trigger will be ignored for data (URL contains parameter ignoreCtData \x3d 1)",
-                    "info")); if (v.inStartup) {
-                        "function" === typeof controller.closeDialog && controller.closeDialog(); storeContext.isSibSupportedByDevice && storeContext.hasManifest && !storeContext.appCacheUpdateReady && setTimeout(function () { applicationCache.update() }, storeConfig.applicationCacheLoadDelayInMs); storeContext.useSystemMenus && createMainSystemMenu(); systemChrome.initialize(); if (just.util.isStoreLoadingFromDisk() && just.util.hasMarketplaceIdChanged()) { just.util.redirect(just.util.getDConfigStoreUrl()); return } cache &&
-                            cache.cleanup()
-                    } k = just.util.isAsrEnabled(); if (k != storeConfig.asrMode && storeContext.cacheTriggersKey) host.dev.log("DeviceASRStatusMismatch", "Stored cache ASR mode \x3d " + storeConfig.asrMode + " Current ASR status in device \x3d " + k, "debug"), just.util.redirect(just.util.getAsrStoreUrl()); else {
-                        controller.prefetchBookDetails && b !== z && (controller.prefetchBookDetails = !1); b ? v.pageTypes[b.action] || controller.deviceStoreInterface.isSSREnabled(b.action) || (b.action = "storefront") : b = { action: "storefront" }; "undefined" ===
-                            typeof b.developer ? b.developer = storeContext.developer : storeContext.developer = b.developer; var I = jQuery.extend({}, b); if ("search" === b.action && (just.util.setSearchQuery(b), just.util.handleSpecialSearchCommand(b.query))) return; "undefined" !== typeof countdownTimer && countdownTimer.isActive() && countdownTimer.stop(); var E, p = {}, n; n = controller.deviceStoreInterface.isSSREnabled("menuData") ? JSON.stringify({ url: controller.deviceStoreInterface.actionToUrlParametersMapping.menuData.url }) : JSON.stringify({ url: "/gp/digital/juno/ajax/getStorefrontData.html" });
-                        v.inStartup && ("storefront" !== b.action || !storeContext.kuFirstRunInMarketplace || KuUpsellCookie.isPresent() && !KuUpsellCookie.isExpired(storeContext.kuFirstRunWaitTime) || (b.action = "kuUpsellInterstitial", b.storeType && (storeConfig.storeType = b.storeType)), setInitialChrome(b), storeContext.startupMetrics.firstGo ? "externalPage" == b.action && (E = storeContext.startupMetrics.firstGo) : (E = { start: new Date, action: b.action }, storeContext.startupMetrics.firstGo = E, host.dev.log("StoreStartup", "Client version: " + storeContext.clientVersion,
-                            "info"), k = { search: "kint_st_sr", detail: "kint_st_dp", buy: "kint_st_by", kuUpsellInterstitial: "kint_st_ku" }, "storefront" !== b.action && controller.sendReftag(k[b.action] || "kint_st_unknwn")), e()); policy.cacheMaintenance(); k = "zh-Hans-CN" == storeConfig.requestedLocale ? "zh-CN" : storeConfig.requestedLocale; m = (new Locale).locale; m = ("zh-Hans-CN" == m ? "zh-CN" : m) || k; if (E && k !== m) host.dev.log("DeviceLocaleMismatch", "Stored cache Locale : " + k + "Current Locale in device" + m, "debug"), controller.forceStoreUpdate(b); else if ("buy" !==
-                                b.action || b.asin !== activateRoamingPageAsin && b.asin !== activateRoamingSubsPageAsin || (b.action = "activateRoaming"), !1 !== c && (c = !0), "selectPayment" == b.action && "undefined" === typeof selectPaymentController && (b.action = "detail"), k = controller.getPreviousPageContext(), "detail" == b.originalAction && k && "1" == k.isDPPUIAuthWidgetEnabled) b.paymentAuthResult = "APPROVED", b.firstName = k.firstName, (new ThankYouPageHorizonte(b)).render(); else if ("thankYouPage" == b.action && controller.deviceStoreInterface.isSSREnabled("thankYouPage") &&
-                                    (b.paymentAuthResult || b.fromOOBPage)) (new ThankYouPageHorizonte(b)).render(); else if ("junoWebHook" == b.action) (new JunoWebHookController(b)).handleWebHook(); else {
-                                        if (controller.deviceStoreInterface.isSSREnabled(b.action, b.category, b.forceGurupa) || controller.deviceStoreInterface.isSSREnabled(b.subAction, b.category, b.forceGurupa)) if (k = just.util.isBlankString(b.subAction) ? b.action : b.subAction, !(controller.deviceStoreInterface.isExperimentPresentForAction(b.action) || controller.deviceStoreInterface.isExperimentPresentForAction(b.subAction) ||
-                                            "detail" == k && "C" === b.treatment)) { b = just.util.getStoreTypeActionContext(b); k = just.util.isBlankString(b.subAction) ? b.action : b.subAction; host.dev.log("controller", "Redirecting from gurupa to horizonte with context action " + k, "info"); if (b.isCustomController) v.customControllers[k].show(b); else return controller.deviceStoreInterface.openSSRPage(b, c); return } "externalPage" == b.action && b.storeType && (b = just.util.getStoreTypeActionContext(b)); var u = g("page", b); u.start.resolve(b); var t = new v.pageTypes[b.action](b);
-                                        "detail" == b.action && (storeConfig.detailPage = t); "buy" === I.action && (I = jQuery.extend({}, b)); b.persistentIframeId && (I.persistentIframeId = b.persistentIframeId); x = b; var y = z; q == q && (q = t); k = t.render(); v.inStartup && "storefront" !== b.action && k.ready.done(function () { t != q || cache.exists(n) || (fetchStorefrontData({}, "menuData", !0), host.dev.log("firstGo", "Entry point is not storefront and storefront data not in cache. Fetching..", "debug")) }); k.ready.done(function (d) {
-                                            t == q && (r && r.hide && r.hide(), r = t, x = {}, setTimeout(function () {
-                                                a(d,
-                                                    E, I); t && t.show && t.show()
-                                            }, 20), y && y.isStoreExit && (y = null), h(c, I, y), controller.firstActionAfterStartup = v.inStartup); u.ready.resolve(b)
-                                        }); k.ready.fail(function (a) {
-                                            if (t == q) {
-                                                if (a && "client-must-upgrade" == a.result) { controller.forceStoreUpdate(b); return } if (a && "invalid-marketplace" == a.result) { controller.updateMarketplace(a.marketplaceInfo); return } if (a && "bundle-detail-page" == a.result) { controller.showExternalPage(a.bundleUrl, getString("juno_title_bar_book_details"), "series_juno_sr_link", I.displayType); return } if ("off" ===
-                                                    host.net.getWirelessState()) { host.dev.log("controller", "User cancelled out of Connection prompt; staying on the same page.", "warn"); controller.clearActiveActions(window); return } controller.showError(a); y && y.isStoreExit && (y = null); h(c, I, y); r && r.hide && r.hide(); r = t; x = {}
-                                            } u.ready.resolve(b)
-                                        }); k.softCacheLoaded && k.softCacheLoaded.done(function (a, c) { u.softCacheComplete.resolve(b) }); k.complete.done(function (a, c) {
-                                            E && b.ref && controller.sendReftag(b.ref); if (t.getCacheState) {
-                                                var e = new jQuery.Deferred; c.getCacheState =
-                                                    e.promise(); p.getCacheState = e.promise()
-                                            } l(a, function () { u.complete.resolve(b, c); t.getCacheState && t.getCacheState().done(function (a, b) { a == cacheStates.CACHED && ciMetricController.setInteractiveReady(); e.resolve(a, b); metrics.flush() }) }); f(); "storefront" === b.action ? controller.reportPageVisit("storefront", n, p) : d && controller.reportPageFlips(b); b.isStoreExit ? (v.inStartup = !0, delete b.isStoreExit) : v.inStartup = !1
-                                        }); k.complete.fail(function () {
-                                            E && b.ref && controller.sendReftag(b.ref); u.complete.resolve(b); f(); metrics.flush();
-                                            b.isStoreExit ? (v.inStartup = !0, delete b.isStoreExit) : v.inStartup = !1
-                                        }); controller.updateStoreSessionMetrics("allPagesVisitCount"); return t
-                                    }
-                    }
-            } function m(a, b) { storeContext.startupMetrics || (storeContext.startupMetrics = {}); storeContext.startupMetrics.localLandingPage = { start: a }; storeContext.startupMetrics.remoteLandingPage || (storeContext.startupMetrics.remoteLandingPage = { start: b }) } function n(a, b) {
-                var c; if (b && b[0] && b[0].target) {
-                    c = b[0]; var d = c.target; c = "\x3c" + c.clientX + "," + c.clientY + "\x3e: " + d.tagName + ": textContent: " +
-                        d.textContent.substr(0, 40)
-                } else c = b && b[0] ? Array.prototype.join.call(b, ", ") : JSON.stringify(b); host.dev.log("storeGesture", a + ": " + c, "debug"); controller.getCurrentDocument() != window.document && host.dev.log("storeGesture", "on dialog", "debug")
-            } function p(a, b, c) {
-                u(c, "TotalRedirection"); b && (b.openExternalUrl && BrowserHost.openExternalUrlsInternally("true"), kindle.appmgr.onpause(), b = document.createElement("form"), b.style.visibility = "hidden", b.method = "POST", c = -1 == a.indexOf("?") ? a : a.substring(0, a.indexOf("?")),
-                    b.action = c, B(a, b), document.body.appendChild(b), b.submit())
-            } function t(a, b, c) { u(c, "WebViewInvocation"); b = just.util.isBlankString(b) ? "" : b; KFEBrowserHost.loadUrl(a, b) } function u(a, b) { a && (a.name = b + ":" + a.name, a.flush = !0, metrics.counter(a)) } function w(a) { return "?" + Object.keys(a).map(function (b) { return b + "\x3d" + encodeURIComponent(a[b]) }).join("\x26") } function B(a, b) {
-                -1 != a.indexOf("?") && a.split("?")[1].split("\x26").forEach(function (a) {
-                    a = a.split("\x3d"); var c = document.createElement("input"); c.name = a[0]; c.value =
-                        decodeURIComponent(a[1]); b.appendChild(c)
-                })
-            } var v = this; v.inStartup = !0; var q, r, y, z, F, x, G = []; this._addPageListener = function (a) { G.push(a) }; this.pageTypes = {}; this.hzPageTypes = {}; this.customControllers = {}; this.persistedFramesDeferred = {}; this.clearForegroundPage = function () { var a = jQuery("#foregroundContent"); e(a); a.hide() }; this.showBackgroundPage = function () { var a = jQuery("#foregroundContent"); e(a); a.hide(); jQuery("#content").show() }; this.showPersistentExternalPage = function (a, b) {
-                this.hidePersistentExternalPages();
-                if (jQuery("#" + a).length) { var c = jQuery("#" + a); if (c) { var d = c[0].contentWindow.reset; "function" == typeof d && d(); c.show() } } else jQuery("#persistedFrames").append(b)
-            }; this.hidePersistentExternalPages = function () { jQuery("#persistedFrames iframe").each(function () { jQuery(this).hide() }) }; this.disableGestures = function (a, b) {
-                if (host.gestures.setDisabled) {
-                    host.gestures.setDisabled(!0); y && clearTimeout(y); var c = function () { host.gestures.setDisabled(!1) }; a && !0 === b ? a.done(c).fail(c) : a ? a.fetch().done(c).fail(c) : y = setTimeout(c,
-                        500)
-                }
-            }; this.replaceHistory = function (a) { h(!1, a, z) }; this.removeExternalFrame = function () {
-                if ("undefined" !==
-                    controller.externalFrameOpened && 1 === controller.externalFrameOpened) { controller.externalFrameOpened = 0; var a = jQuery("#externalFrame"); "undefined" !== typeof a && 0 !== a.length && a.is(":visible") && (a.remove(), jQuery("#content").show()) }
-            }; this.pushHistoryForExternalFrame = function (a, b, c) { h(a, b, c) }; this.openGrok = function () { var a = "com.lab126.booklet.discovery?source\x3dstore"; "detail" == z.action && z.asin && (a = a + "\x26ASIN\x3d" + z.asin); host.appmgr.start(a) }; this._showPage = function (a) { return k(a) }; this._gotoPage = function (a,
-                b) { return k(a, !1, b) }; this._gotoCurrentPage = function () { z && k(z, !1) }; this._showPreviousPage = function () { F && k(F) }; this._getCurrentPageContext = function () { return z }; this.getPreviousPageContext = function () { return F }; this.updatePreviousPageContext = function (a) { F = a }; this._getPendingPageContext = function () { return x }; var C, D; this.expandSearchDialog = function (a) { var b = just.constants.searchSuggestionWindowDimensions; a.resizeTo(b.width, b.expandedHeight) }; this.retractSearchDialog = function (a) {
-                    var b = just.constants.searchSuggestionWindowDimensions;
-                    a.resizeTo(b.width, b.retractedHeight)
-                }; this.displaySearchDialog = function (a) {
-                    var b = g("searchDialog", c), c = { query: a }; b.start.resolve(c); var d = new SearchSuggestionData(a), e = new SearchDropdownView(d); D = e; e.render().done(function (f) {
-                        var g = !1, h = !1, k = f.children().length; e == D && (!C || C.closed ? (C = searchSuggestion(a, k), g = !0, topChromeJQuery.find("#searchinput").hide(), topChromeJQuery.find("#storefront").hide(), h = !0) : g = jQuery(C.document).find("#searchsuggestioninput").is(":focus")); g ? (h || (0 < k ? controller.expandSearchDialog(C) :
-                            controller.retractSearchDialog(C)), just.util.attachLoadHandlerToWindow(C, function () { var a = jQuery(C.document).find("#searchdropdown"); a.empty(); a.append(f); a.show(); jQuery(C.document).find("#searchsuggestioninput").focus() })) : jQuery("\x3cdiv\x3e").append(f).empty(); g = { searchSuggestionData: d }; b.ready.resolve(c, g); b.complete.resolve(c, g)
-                    })
-                }; this.closeSearchDialog = function () {
-                    C && (topChromeJQuery.find("#searchinput").show(), topChromeJQuery.find("#storefront").show(), jQuery(C.document).contents().remove(),
-                        C.close(), C = null, controller.showChromeButton("menu")); topChromeJQuery.find("#searchinput").blur()
-                }; this.sendReftag = function (a, b) { jQuery.ajax({ url: "/kindle-dbs/reftag?ref\x3d" + a, data: just.util.filterParameters(b) }) }; var J = function (a) { a = just.util.queryParametersToHash(a); a.redirectFromAction && (a.action = a.redirectFromAction, delete a.redirectFromAction); a.ref = a.ref_ ? a.ref_ : a.ref; delete a.ref_; return a }; host.appmgr.onforward = function (a, b) {
-                    var c = new Date, d = Cookie.get("x-amzn-juno-initial-context") || Cookie.get("x-amzn-juno-forced-update");
-                    d && (a = d, Cookie.get("x-amzn-juno-initial-context") && Cookie.clear("x-amzn-juno-initial-context"), Cookie.get("x-amzn-juno-forced-update") && (storeContext.forcedUpdate = 1, Cookie.clear("x-amzn-juno-forced-update")), host.dev.log("controller", "Store app received an overridden onforward: " + a, "debug")); host.dev.log("controller", "Store app received an onforward: " + a, "debug"); var e = 1 == b ? !1 : void 0, d = J(a); d ? d.storeType || (d.storeType = "ebooks") : d = { storeType: "ebooks" }; if (just.util.isKFE() && d && d.llpStartTime) {
-                        var f =
-                            new Date(parseInt(d.llpStartTime)); m(f, c)
-                    } c = k(d, e); "true" == d.isBackgroundLoad && (c = c.render(), c.complete.done(function (a, b) { host.appmgr.onpause(!0) }), c.complete.fail(function () { host.appmgr.onpause(!0) }))
-                }; host.appmgr.onback = function (a) {
-                    controller.removeExternalFrame(); var b = Cookie.get("x-amzn-juno-initial-context") || Cookie.get("x-amzn-juno-forced-update"); b && (a = b, Cookie.get("x-amzn-juno-initial-context") && Cookie.clear("x-amzn-juno-initial-context"), Cookie.get("x-amzn-juno-forced-update") && (storeContext.forcedUpdate =
-                        1, Cookie.clear("x-amzn-juno-forced-update")), host.dev.log("controller", "Store app received an overridden onback: " + a, "debug")); host.dev.log("controller", "Store app received an onback: " + a, "debug"); k(J(a), !1)
-                }; host.appmgr.onpause = function (a) {
-                    controller.removeExternalFrame(); controller.updateStoreSessionMetrics("storeActive", -1); "undefined" !== typeof countdownTimer && countdownTimer.isActive() && countdownTimer.stop(); h(1 == a ? !1 : !0, null, z); f(); controller.hidePersistentExternalPages(); controller.appCacheUpdateReady ?
-                        (a = Date.now(), controller.updateComplete({ action: "storefront", isStoreExit: !0, isBackgroundUpdate: !0 }, a)) : v.inStartup = !0
-                }; host.gestures.onswipe = function (a, b, c) { n("swipe", arguments); var d = controller.getCurrentDocument().elementFromPoint(b, c); d && jQuery(d).trigger("swipe" + a) }; host.gestures.ontap = function () { n("tap", arguments) }; jQuery(window).unload(unloadChrome); this.start = function () {
-                    host.dev.log("controller", " starting! (jQuery.ready) @ " + (new Date).getTime(), "debug"); Orientation.get() != Orientation.PORTRAITUP &&
-                        Orientation.set(Orientation.PORTRAITUP); host.dev.webkitLog && host.dev.webkitLog("on"); this.installActivationHandler(window); just.util.copyStoreCssToWindow(window); storeConfig && storeConfig.locale && jQuery(window.document.body).attr("data-locale", storeConfig.locale); (just.util.isKFE() || just.util.isJuno() && 2.5 <= just.util.getDeviceSoftwareGeneration()) && jQuery(window.document.body).attr("data-ui-version", "2"); (just.util.isKFE() || just.util.isJuno() && 7 <= just.util.getDeviceSoftwareGeneration()) && jQuery(window.document.body).attr("data-font-version",
-                            "7"); window.storeContext.spriteVersion && jQuery(window.document.body).attr("data-sprite-version", window.storeContext.spriteVersion); just.util.isKFE() && jQuery("html").addClass("e3os_scrollable"); loadChrome()
-                }; this.triggerLocalDownload = function (a) { host.dev.log("localTodo", "Triggering a local todo document: " + a, "debug"); host.todo.scheduleItems(a) }; this.installActivationHandler = function (a) {
-                    a.addEventListener("click", function () { n("click", arguments) }, !0); a.addEventListener("dblclick", function () {
-                        n("dblclick",
-                            arguments)
-                    }, !0); a.addEventListener("click", function () { if (arguments && arguments[0] && arguments[0].target) { var a = arguments[0], b = a.target, c = new Date, c = "" + c.getFullYear() + (c.getMonth() + 1) + c.getDate() + ":" + c.getHours() + c.getMinutes() + c.getSeconds(), d = { gesture: "click" }; d.dateString = c; d.pos = "\x3c" + a.clientX + "," + a.clientY + "\x3e"; d.tagName = b.tagName; d.id = b.id; d.className = b.className; storeContext.lastSavedGesture = d } }, !0); "undefined" === typeof this.messageRouter && (this.messageRouter = new MessageRouter, this.messageRouter.init());
-                    "undefined" === typeof this.deviceStoreInterface && (this.deviceStoreInterface = new DeviceStoreInterface); jQuery(a.document.body).delegate("a, .action, button", "click", function () { if (topChromeWindow == a || controller.getCurrentDocument() == a.document) { var b = jQuery(this); b.hasClass("instantAction") || b.hasClass("instantaction") || b.hasClass("disabled") || 0 < b.parents(".action").length || (v.clearActiveActions(a), b.addClass("active")) } })
-                }; this.clearActiveActions = function (a) { a && a.document && a.document.body && jQuery(a.document.body).find(".active").removeClass("active") };
-            this.isDemoMode = function () { if (!storeConfig.isTardisSupportEnabledForVersion) return !1; try { if ("function" === typeof kindle.dev.isInDemoMode && kindle.dev.isInDemoMode()) return !0 } catch (a) { host.dev.log("Tardis", "Error : kindle.dev.isInDemoMode() is undefined", "error") } return !1 }; this.isDeviceRegistered = function () { policy.cacheMaintenance(); return "registered" == host.dev.getRegistrationState }; this.isBacchusWeblabEnabled = function (a) {
-                return controller.bacchusPreConditions(a) ? (a = host && host.dev && "function" === typeof host.dev.getWeblabTreatment &&
-                    "T1" == host.dev.getWeblabTreatment("BACCHUS_EXPERIMENT_394750", "C")) ? a : host && host.dev && "function" === typeof host.dev.isBacchusStoreEnabled && host.dev.isBacchusStoreEnabled() : !1
-            }; this.bacchusPreConditions = function (a) { return a && "audible" === a.storeType ? !1 : !("detail" !== a.action || !a.asin || !controller.isValidAsinCategoryForBacchus(a)) }; this.isValidAsinCategoryForBacchus = function (a) { return !a.asinCategory || "EBOOK" === a.asinCategory || "EBOK" === a.asinCategory }; this.buildBacchusLaunchUri = function (a) {
-                var b = controller.addSearchParam("action",
-                    "detail"), b = controller.addSearchParam("asin", a.asin, b), c = { asinCategory: "asinType", title: "bookTitle" }, d; for (d in c) { var e = c[d]; a[d] && (a[e] = a[d]) } ["asinBadgeType", "asinType", "author", "imagePath", "bookTitle"].forEach(function (c) { a[c] && (b = controller.addSearchParam(c, a[c], b)) }); return "com.lab126.KPPStoreShopping" + b
-            }; this.addSearchParam = function (a, b, c) { return c ? c.concat("\x26", a, "\x3d", b) : "?".concat(a, "\x3d", b) }; this.openDeviceRegistration = function (a) {
-                just.util.isKFE() && 10.32 <= just.util.getDeviceSoftwareGeneration() &&
-                    (a ? controller.pushHistoryForExternalFrame(!0, null, a) : controller.pushHistoryForExternalFrame(!0, null, z)); "function" === typeof controller.closeDialog && controller.closeDialog(); host.appmgr.start("com.lab126.booklet.settings?viewRequest\x3dVIEW_REQUEST_ID_REGISTRATION")
-            }; this.updateMarketplace = function (a) { a.redirect && just.util.redirect(a.url) }; this.updateStoreSessionMetrics = function (a, b) {
-                var c = prefs.get("storeSessionMetrics"); c && void 0 !== c[a] && ("undefined" !== typeof b ? c[a].value += b : c[a].value++, prefs.set("storeSessionMetrics",
-                    c))
-            }; this.invokePaymentView = function (a, b, c) { just.util.isKFE() ? "undefined" != typeof KFEBrowserHost ? t(a.url, c.title, b) : "undefined" != typeof BrowserHost ? p(a.url, c, b) : (document.addEventListener("KFEBrowserHostReady", function () { t(a.url, c.title, b) }), document.addEventListener("BrowserHostReady", function () { p(a.url, c, b) })) : storeConfig.hasPaymentApp ? (u(b, "PaymentAppInvocation"), host.appmgr.start("com.lab126.payment" + w(a))) : c && c.canFallbackToBrowser && this.invokeBrowser(a.url) }; this.invokeBrowser = function (a) {
-                host.appmgr.start("com.lab126.browser" +
-                    w({ view: a }))
-            }
-        }
-        controller = new Controller;
+        // Fix "store load error stuff"
+        kindle.appmgr.onback = function(a) {return true;}
+        kindle.appmgr.onforward = function(a, b) {return true;}
     </script>
 </head>
 
 <body>
     <h1>Mesquito</h1>
     <p>Semi-Persistent Kindle App Loader</p>
-
-    <button onclick="hax()">ACTIVATE HAX</button>
 
     <script>
         var kindle = window.kindle || top.kindle;
@@ -298,6 +62,11 @@
         hax()
 
         function hax() {
+            kindle.device.clearApplicationCache();
+            kindle.device.clearCache();
+            kindle.dev.clearApplicationCache();
+            kindle.dev.clearCache();
+
             kindle.chrome.setSpinnerState('stop', 0, 0);
             kindle.net.setWirelessPrompt('never');
             top.location.href = "file:///mnt/us/mesquito/index.html";

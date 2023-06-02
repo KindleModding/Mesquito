@@ -5,9 +5,10 @@
 <html>
 <head>
   <meta name="viewport" content="user-scalable=no"/>
-  <script src="file:///mnt/us/mesquito/polyfill.min.js"></script>
+  <script src="../../mesquito/polyfill.min.js"></script>
   <script src="file:///mnt/us/mesquito/sdk.js"></script>
   <script src="./main.js"></script>
+  <script src="./inspect.js"></script>
 
   <link href="./main.css" rel="stylesheet">
 
@@ -19,6 +20,7 @@
 </head>
 <body>
   <h1>Mesquito DEVTOOLS</h1>
+  <p>v1.3.0</p>
   <a href="file:///mnt/us/">back</a>
   <textarea rows=10 id="log"></textarea>
 
@@ -29,6 +31,35 @@
   <button onclick="restorePrevious()">PREV</button>
   <button onclick="restoreNext()">NEXT</button>
   <button onclick="testContext()">testContext</button>
+
+  <button onclick="testBridge()">BRIDGE TEST 1</button>
+
+  <p>Connect to SJS</p>
+  <form class="userInput" action="#">
+    <input type="text" id="IPInput">
+    <button onclick="connectToServer()">Connect To IP</button>
+  </form>
+
+  <script>
+    function testBridge() {
+      log("Running testbridge");
+      nativeBridgeRunner(
+        'default_status_bar',
+        function() 
+        {
+          // Get the Screen saver prevention status
+          return nativeBridge.getIntLipcProperty(
+            'com.lab126.powerd', 
+            'preventScreenSaver'
+          );
+        }, 
+        function(retVal) {
+          log('preventScreenSaver is set to '+retVal);
+        }
+      );
+      log("Testbridge run");
+    }
+  </script>
 
   <div id="lastCommands"></div>
 </body>
