@@ -1,4 +1,7 @@
 # Mesquito
+The annoying WAF loader
+
+Join Our Discord Server: [https://dsc.gg/kindle-modding](https://dsc.gg/kindle-modding)
 
 ## What is Mesquito
 Mesquito is **NOT** a jailbreak, rather, Mesquito is a way to run userspace limited WAFs (Web Application Framworks?) on all firmwares `<=5.15.1.1`
@@ -22,7 +25,7 @@ Similar to KWebBrew apps, a WAF is effectively just a locally stored webpage, *h
 Mesquito works by overriding the local cache of a pre-existing WAF, in this case, the store. Mesquito does not allow for piracy, it's literally impossible and it does not tamper with any other parts of the Kindle. There is only one way to patch Mesquito, and if Amazon/LAB126 chooses to, they would literally only be attacking the Kindle Homebrew Community.
 
 ## How can I make my own WAFs?
-Please reffer to the [wiki](#)
+Please reffer to the [wiki](https://kindlemodding.github.io/docs/)
 
 ### How to install (PERSISTENTLY)
-Something interesting I discovered, if you reset your Kindle, and perform the installation steps without opening the regular store, it is fully persistent, even after a hard restart. I plan on doing more investiagion to try to replicate this without resetting your Kindle, perhaps something in the `lipc` calls can disable store updating...
+Something interesting I discovered, if you reset your Kindle, and perform the installation steps without opening the regular store beforehand, it is fully persistent, even after a hard restart. I plan on doing more investiagion to try to replicate this without resetting your Kindle, perhaps something in the `lipc` calls can disable store updating...
