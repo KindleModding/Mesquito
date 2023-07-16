@@ -1,7 +1,7 @@
 # Mesquito
 The annoying WAF loader
 
-| ![Mesquito](https://github.com/KindleModding/Mesquito/assets/69104218/8f9a2605-060a-4d49-9acf-e70dfc920fc4) | ![KChess](https://github.com/KindleModding/Mesquito/assets/69104218/ec3d99d9-b96f-4e5d-8da0-8ac77de08e64) |
+| ![Mesquito](https://github.com/KindleModding/Mesquito/assets/69104218/d4948414-bd63-4387-b9bb-f8d83b6915cb) | ![KChess](https://github.com/KindleModding/Mesquito/assets/69104218/e696a49b-ee10-442f-ba83-bc17f0101210) |
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 
 
