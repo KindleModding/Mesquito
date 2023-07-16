@@ -5,7 +5,7 @@
 //===============================//
 
 var versionInt = 2;
-var versionString = 'v1.2.0'
+var versionString = 'v0.3.0'
 
 // Clear localStorage log
 //window.localStorage.setItem("latest.log", JSON.stringify([])) // Empty log
