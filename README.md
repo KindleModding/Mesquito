@@ -1,5 +1,10 @@
-# Mesquito
+# Mesquito (BETA)
 The annoying WAF loader
+
+![GitHub all releases](https://img.shields.io/github/downloads/KindleModding/Mesquito/total?style=for-the-badge)
+![GitHub tag (with filter)](https://img.shields.io/github/v/tag/KindleModding/Mesquito?style=for-the-badge&label=Latest%20Version)
+![GitHub](https://img.shields.io/github/license/KindleModding/Mesquito?style=for-the-badge)
+
 
 | ![Mesquito](https://github.com/KindleModding/Mesquito/assets/69104218/d4948414-bd63-4387-b9bb-f8d83b6915cb) | ![KChess](https://github.com/KindleModding/Mesquito/assets/69104218/e696a49b-ee10-442f-ba83-bc17f0101210) |
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
