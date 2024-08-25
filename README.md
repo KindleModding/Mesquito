@@ -13,9 +13,9 @@ The annoying WAF loader
 Join Our Discord Server: [https://dsc.gg/kindle-modding](https://dsc.gg/kindle-modding)
 
 ## What is Mesquito
-Mesquito is **NOT** a jailbreak, rather, Mesquito is a way to run userspace limited WAFs (Web Application Framworks?) on all firmwares `<=5.16.2.1`
+Mesquito is **NOT** a jailbreak, rather, Mesquito is a way to run userspace limited WAFs (Web Application Framworks?) on all firmwares `<= 5.16.21` (this may not always be up to date make sure to try ;))
 
-Note, that Mesquito is "semi-untethered" meaning that if you hard restart your Kindle, you may lose it*
+Note, that Mesquito is "semi-untethered" meaning that if you hard restart your Kindle, you may lose it, it might also randomly disapear by itself during cache refresh (assuming you keep wifi on)*
 
 ## What is a WAF?
 Similar to KWebBrew apps, a WAF is effectively just a locally stored webpage, *however*, unlike KWebBrew apps, WAFs run through Mesquito
