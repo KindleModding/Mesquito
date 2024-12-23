@@ -41,38 +41,43 @@ function generateTable(appList, columns) {
 
     var parsedManifests = []; // Store parsed manifests
     for (var i = 0; i < appManifests.length; i++) {
-      // Parse manifest file
-      var appData = JSON.parse(appManifests[i]);
-      // Handle different manifest versions
-      switch (appData.manifestVersion) {
-        case 2:
-          if (appData.minVersion > versionInt) {
-            continue;
-          }
-          if (appData.id == "com.kwebbrew.settings") {
-            continue;
-          }
-          break;
-      }
+      try {
+        // Parse manifest file
+        var appData = JSON.parse(appManifests[i]);
+        // Handle different manifest versions
+        switch (appData.manifestVersion) {
+          case 2:
+            if (appData.minVersion > versionInt) {
+              continue;
+            }
+            if (appData.id == "com.kwebbrew.settings") {
+              continue;
+            }
+            break;
+        }
 
-      parsedManifests.push(appData);
+        parsedManifests.push(appData);
+      } catch (error) {
+        // Send error to log
+        log("UNKNOWN MANIFEST FOUND.");
+      }
     }
 
     // Loop through app manifests
     for (var i = 0; i < parsedManifests.length; i++) {
-      if (i % columns == 0 && i != 0) {
-        // If it is the end of a row, add the row to the table and create a new row
-        document.getElementById("appTable").appendChild(tableRow);
-        var tableRow = document.createElement("tr");
-        tableRow.class = "appRow";
-      } else if (i == 0) {
-        // If it is the first row, create a new row without adding the (non-existent) previous row to the body
-        var tableRow = document.createElement("tr");
-        tableRow.classList.add("appRow");
-      }
-
       // Try/Catch for malformed manifests
       try {
+        if (i % columns == 0 && i != 0) {
+          // If it is the end of a row, add the row to the table and create a new row
+          document.getElementById("appTable").appendChild(tableRow);
+          var tableRow = document.createElement("tr");
+          tableRow.class = "appRow";
+        } else if (i == 0) {
+          // If it is the first row, create a new row without adding the (non-existent) previous row to the body
+          var tableRow = document.createElement("tr");
+          tableRow.classList.add("appRow");
+        }
+
         if (!parsedManifests[i].waf) {
           window.mesquito.log("App is not waf: " + parsedManifests[i].name)
           parsedManifests[i].waf = false;
@@ -103,15 +108,15 @@ function generateTable(appList, columns) {
         appAnchor.appendChild(appName);
         appCell.appendChild(appAnchor);
         tableRow.appendChild(appCell);
+
+        // Add the last row to the table
+        document.getElementById("appTable").appendChild(tableRow);
       }
       catch (error) {
         // Send error to log
         log("APP ERROR [" + parsedManifests[i].name + "]" + error.toString());
       }
     }
-
-    // Add the last row to the table
-    document.getElementById("appTable").appendChild(tableRow);
   });
 }
 
@@ -121,6 +126,7 @@ function log(logData) {
   p.innerText = logData.toString();
   document.getElementById("log").appendChild(p);
 
+  // Lol we don't want to kill your eMMC
   // var currentLog = JSON.parse(window.localStorage.getItem("latest.log"));
   // currentLog.push(new Date().toISOString() + " - " + logData);
   // window.localStorage.setItem("latest.log", JSON.stringify(currentLog));
