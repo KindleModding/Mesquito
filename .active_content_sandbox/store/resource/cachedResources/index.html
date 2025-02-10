@@ -62,10 +62,13 @@
         hax()
 
         function hax() {
-            kindle.device.clearApplicationCache();
-            kindle.device.clearCache();
-            kindle.dev.clearApplicationCache();
-            kindle.dev.clearCache();
+            if (kindle.device !== undefined) {
+                kindle.device.clearApplicationCache();
+                kindle.device.clearCache();
+            } else if (kindle.dev !== undefined) {
+                kindle.dev.clearApplicationCache();
+                kindle.dev.clearCache();
+            }
 
             kindle.chrome.setSpinnerState('stop', 0, 0);
             kindle.net.setWirelessPrompt('never');
